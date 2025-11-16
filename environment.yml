@@ -1,20 +1,59 @@
+# name: gaussian_splatting
+# channels:
+#   - pytorch
+#   - conda-forge
+#   - defaults
+# dependencies:
+#   - cudatoolkit=11.6
+#   - plyfile
+#   - python=3.7.13
+#   - pip=22.3.1
+#   - pytorch=1.12.1
+#   - torchaudio=0.12.1
+#   - torchvision=0.13.1
+#   - tqdm
+#   - pip:
+#     - submodules/diff-gaussian-rasterization
+#     - submodules/simple-knn
+#     - submodules/fused-ssim
+#     - opencv-python
+#     - joblib
+# name: gaussian_splatting
+# channels:
+#   - pytorch
+#   - conda-forge
+#   - defaults
+#   - nvidia
+# dependencies:
+#   - cuda-toolkit=12.4
+#   - plyfile
+#   - python=3.8
+#   - pip=22.3.1
+#   - pytorch
+#   - torchaudio
+#   - torchvision
+#   - tqdm
+#   - pytorch-cuda=12.4
+#   - pip:
+#     - submodules/diff-gaussian-rasterization
+#     # - submodules/simple-knn
 name: gaussian_splatting
 channels:
   - pytorch
   - conda-forge
   - defaults
+  - nvidia
 dependencies:
-  - cudatoolkit=11.6
+  - cuda-toolkit=12.4
   - plyfile
-  - python=3.7.13
-  - pip=22.3.1
-  - pytorch=1.12.1
-  - torchaudio=0.12.1
-  - torchvision=0.13.1
+  - python=3.12.7
+  - pip=24.3.1
+  - pytorch
+  - torchaudio
+  - torchvision
   - tqdm
+  - pytorch-cuda=12.4
+  - gxx_linux-64=10
   - pip:
     - submodules/diff-gaussian-rasterization
     - submodules/simple-knn
-    - submodules/fused-ssim
-    - opencv-python
-    - joblib
